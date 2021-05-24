@@ -6,7 +6,8 @@ import Pokecard from './Pokecard';
  * Returns array of Pokecard JSX elements
  */
 function Pokedex(props) {
-  return props.pokemons.map(pokemon => Pokecard(pokemon))
+  return props.pokemons.map(pokemon => <Pokecard name= {pokemon.name} id= {pokemon.id}
+    type = {pokemon.type} base_experience={pokemon.base_experience}  />) 
 }
 
 Pokedex.defaultProps = {pokemons:[

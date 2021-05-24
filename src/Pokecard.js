@@ -4,6 +4,7 @@ import './Pokecard.css'
  * Returns div element of Pokecard including name, image, type and experience
 */
 
+// make a base URL for img
 function Pokecard(props) {
   const { name, id, type, base_experience } = props;
   return (
